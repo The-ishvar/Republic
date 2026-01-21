@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        body {
+            background: linear-gradient(orange, orange, white, white, green, green);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        form {
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            /* height: 100vw; */
+            margin: 0px 50px 0px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        input {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 20px;
+            border: 1px solid black;
+            border-bottom: 3px solid black;
+            background-color: rgba(255, 255, 255, 0.201);
+            color: black;
+        }
+
+        input ::placeholder {
+            color: black;
+        }
+
+        button {
+            width: 110px;
+            height: 40px;
+            border-radius: 999px;
+            border: none;
+            border-bottom: 3px solid black;
+            margin-bottom: 10px;
+            background-color: rgb(99, 101, 241);
+
+        }
+    </style>
+
+    <!-- <script src="jionnow.html"></script> -->
+
+    <script>
+        function jion() {
+            let even = document.getElementById('Evennumber').value;
+            let totel = 0;
+            for (let i = 1; i <= even; i++) {
+                let x = i / 2;
+                totel = totel + x;
+                console.log(totel);
+            }
+            console.log(totel);
+            alert(totel);
+        }
+    </script>
+</head>
+
+<body>
+    <form action="">
+        <label for="Name">Enter your name</label>
+        <input id="Name" type="text" placeholder="Enter your Name" name="Name">
+
+        <label for="email">Enter your email</label>
+        <input id="email" type="email" placeholder=" Enter your email" name="email" required>
+
+        <label for="password">Enter your password </label>
+        <input id="password" type="password" placeholder="Enter your password" name="password" required>
+
+        <label for="number">Enter your number</label>
+        <input id="number" type="number" placeholder="Enter your number" name="number" required>
+
+        <label for="Evennumber">Enter Even number</label>
+        <input id="Evennumber" type="number" placeholder=" Even number type " maxlength="5" required name="OTP jenert">
+
+
+        <label for="OTP">Enter your OTP</label>
+        <input id="OTP" type="OTP" placeholder="Enter your OTP">
+
+        <button onclick="jion()">submit</button>
+        <button type="submit">Cloge</button>
+    </form>
+
+</body>
+
+</html>
